@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Toasts</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="inputField.css">
+<link rel="stylesheet" type="text/css" href="buttons.css">
+<link rel="stylesheet" type="text/css" href="links.css">
+<link rel="stylesheet" type="text/css" href="notifications.css">
+    
+
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+</head>
+
+<body>
+<div class="row" style="margin-left:24px;">
+<div class="col-md-3"></div>
+<div class="col-md-9 row" >
+<div class="col-md-8 row">
+
+<div style="padding-top: 50px;">
+
+<h1>Toast Notifications Style Three</h1>
+            <!-- SUCCESS -->
+            <button onclick="createNotification(cssType = 'toast', 
+                                         toastType = 'success', 
+                                         toastIconAria = 'Success:', 
+                                         desktopMessage = 'Delivery preference is saved.', 
+                                         mobileMessage = 'Delivery preference is saved.',
+containerDiv = 'toastsContainerRight', 
+appendChoice = 'prepend',                                         
+closeButton = true, 
+                                         autoClose = true)">Success</button>
+
+            <!-- Error -->
+            <button onclick="createNotification(cssType = 'toast', 
+                                         toastType = 'error', 
+                                         toastIconAria = 'Error:', 
+                                         desktopMessage = 'Error notifications tell users what’s required to successfully complete the action they are trying to complete.', 
+                                         mobileMessage = 'Error notifications tell users what’s required to successfully complete the action they are trying to complete.', 
+containerDiv = 'toastsContainerRight',                                    
+appendChoice = 'prepend',
+closeButton = true, 
+                                         autoClose = false)">Error</button>
+
+
+</div>
+
+<div id="toastsContainerRight" class="toastsContainer"></div>
+
+
+<div style="padding-top: 50px;">
+
+<h1>Toast Notifications Style Four</h1>
+            <!-- SUCCESS -->
+            <button onclick="createNotification(cssType = 'toast', 
+                                         toastType = 'success', 
+                                         toastIconAria = 'Success:', 
+                                         desktopMessage = 'Delivery preference is saved.', 
+                                         mobileMessage = 'Delivery preference is saved.',
+containerDiv = 'toastsContainerLeft', 
+appendChoice = 'prepend',                                         
+closeButton = true, 
+                                         autoClose = true)">Success</button>
+
+            <!-- Error -->
+            <button onclick="createNotification(cssType = 'toast', 
+                                         toastType = 'error', 
+                                         toastIconAria = 'Error:', 
+                                         desktopMessage = 'Error notifications tell users what’s required to successfully complete the action they are trying to complete.', 
+                                         mobileMessage = 'Error notifications tell users what’s required to successfully complete the action they are trying to complete.', 
+containerDiv = 'toastsContainerLeft',                                         
+appendChoice = 'prepend',
+closeButton = true, 
+                                         autoClose = false)">Error</button>
+
+
+</div>
+
+
+<div id="toastsContainerLeft" class="toastsContainer"></div>
+
+
+<div style="padding-top: 32px; padding-left: 30%;">
+<a href="index.html" class="by-keyboard">Previous</a></div>
+
+</div>
+
+<br role="none"/>
+<br role="none"/>
+<br role="none"/>
+<br role="none"/>
+<br role="none"/>
+
+</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+<script src="buttons-script.js"></script>
+<script src="inputFieldScript.js"></script>
+<script src="links-script.js"></script>
+<script src="notifications.js"></script>
+<script src="custom.js"></script>
+</body>
+
+</html>
